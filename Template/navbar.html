@@ -1,6 +1,9 @@
 <ul>
     <li><a href="{% url 'jobfeedPage' %}">Job Feed</a></li>
     <li><a href="{% url 'addjobPage' %}">Add job</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="{% url 'appliedjob' %}">Applied job</a></li>
+    <li><a href="{% url 'createdjob' %}">Created job</a></li>
+    
+    <li><a href="{% url 'changepassword' %}">Change Password</a></li>
     <li style="float:right"><a class="active" href="{% url 'logoutPage' %}">Log out</a></li>
   </ul>

@@ -111,7 +111,7 @@
         <button type="button">Search</button>
     </div>
 
-    {% for i in data %}
+    {% for i in Job %}
     <div class="job-listing">
         <h2>{{i.job_title}}</h2>
         <p class="company">{{i.company_name}}</p>
@@ -122,14 +122,8 @@
         <p class="description">{{i.description}}</p>
         <p class="description">{{i.user.username}}</p>
 
-        <a href="{% url 'viewjobPage' i.id %}" class="apply-btn">View Job</a>
-        {% if request.user.usertype == 'jobseeker' %}
-
-        <a href="{% url 'apply_now' i.id %}" class="apply-btn">Apply Now</a>
         
-            
-        {% endif %}
-            
+           
 
         
     </div>

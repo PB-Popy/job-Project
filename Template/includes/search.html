@@ -120,13 +120,11 @@
         <p class="employment_type">{{i.employment_type}}</p>
         <p class="posted_date">{{i.posted_date}}</p>
         <p class="description">{{i.description}}</p>
-        <p class="description">{{i.user.username}}</p>
 
-        <a href="{% url 'viewjobPage' i.id %}" class="apply-btn">View Job</a>
+        
         {% if request.user.usertype == 'jobseeker' %}
 
         <a href="{% url 'apply_now' i.id %}" class="apply-btn">Apply Now</a>
-        
             
         {% endif %}
             
